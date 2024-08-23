@@ -1,0 +1,110 @@
+:root {
+  --mainColor: #EB5B00;
+  
+}
+
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--mainColor);
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.dog-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.dog-images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Ensures the image covers the box without distorting */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+}
+
+.contact-info h2 {
+    color: var(--mainColor);
+    margin-top: 0;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: var(--mainColor);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+#footer {
+  color: var(--mainColor);
+}
+
+/* Responsive Design */
+
+/* medium */
+@media (max-width: 768px) {
+    .dog-images img {
+        width: 80%;
+        height: auto;
+    }
+    #textAndImage1 {
+      padding-bottom: 5%;
+    }
+}
+
+/* small */
+@media (max-width: 480px) {
+    .dog-images img {
+        width: 90%;
+        height: auto; /* Ensures the image adjusts while maintaining aspect ratio */
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
